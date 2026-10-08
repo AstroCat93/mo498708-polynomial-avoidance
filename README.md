@@ -30,6 +30,37 @@ The poster proved (Q1) for $d=0,1,2,p-2,p-1$. They also gave blocking families f
 | **Theorem 5** | At $(p,d)=(11,8)$ and $(13,10)$ **no** blocking family exists: every family of $d$-sets is avoided by some $f$ with $\deg f\le d-1$. | **Computer-assisted**: exhaustive search, no formal certificate (§3.4; see below) |
 | Open | Sharpness at $p=11$ for $3\le d\le7$, at $p=13$ for $3\le d\le9$, and at every $p\ge17$ for $3\le d\le p-3$. | Not decided; heuristic data only (§3.5) |
 
+## Lean formalization (Theorems 1 and 2)
+
+**Theorems 1 and 2 are machine-checked in Lean 4 + Mathlib** (`lean/`, Lean v4.34.1, Mathlib `v4.34.1`). The main statement uses only Mathlib's own definitions:
+
+```lean
+theorem MO498708.theorem1 (p : ℕ) [Fact p.Prime] (d : ℕ) (hd : d ≤ p - 1)
+    (A : ZMod p → Finset (ZMod p)) (hA : ∀ i, (A i).card ≤ d) :
+    ∃ f : Polynomial (ZMod p), f.natDegree ≤ d ∧ ∀ i, f.eval i ∉ A i
+```
+
+Also formalized:
+- `theorem1_count`: at least p − d such polynomials.
+- `theorem1_value`: the value at one point can be prescribed.
+- `theorem2`: the closed form C(p,d) = (−1)^{d(d+1)/2} ∏ binom(d,k), shown nonzero, where C(p,d) is literally the coefficient of the MvPolynomial ∏_i (Σ_j X_j i^j)^d.
+- `theorem2_Asum`, `Asum_eq_esymm`, `Asum_eq_zero`.
+
+Every theorem depends only on the standard axioms `propext`, `Classical.choice` and `Quot.sound`. There is no `sorry`, no extra axioms and no `native_decide`. An independent checker rebuilt the project from a clean state and judged the statements faithful.
+
+Where the Lean route differs from `solution.md`:
+- Lemma 2.3 is proved via Newton's identities and unique factorisation in F_p[X], not via the Euler product / logarithmic derivative.
+- The count p − d is derived from the prescribed-value statement, not from Alon–Füredi.
+
+The sharpness results (Propositions 3–4, Theorem 5) are **not** formalized.
+
+Build:
+```bash
+cd lean
+lake exe cache get        # downloads Mathlib's prebuilt cache (several GB)
+lake build Formal.MO498708.All
+```
+
 ## Proof sketch of Theorems 1 and 2
 
 We may assume $|A_i|=d$. For $c=(c_0,\dots,c_d)\in\mathbb F_p^{d+1}$ put $f_c(x)=\sum_j c_jx^j$ and
