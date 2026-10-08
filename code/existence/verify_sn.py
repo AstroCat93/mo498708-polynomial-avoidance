@@ -1,5 +1,6 @@
 # Verify s_n := sum_{beta in F_{p^n}} Norm_{F_{p^n}/F_p}(beta^{p-1}-1)^d  ==  -sum_{t=1}^d gamma_t^n,
-# gamma_t = (-1)^{d-t} binom(d,t)  (mod p).  Also verify s_n = sum_{k|n} k sum_{pi monic irr deg k} N(pi)^{d n/k}.
+# gamma_t = (-1)^{d-t} binom(d,t)  (mod p), computing in a genuine extension field F_{p^n}.
+# (The identity s_n = sum_{k|n} k sum_{pi monic irr deg k} N(pi)^{d n/k} of solution.md, Lemma 2.3(c), is not checked here.)
 import itertools, sympy as sp
 from math import comb
 def field(p,n):

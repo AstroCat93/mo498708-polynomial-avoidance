@@ -1,8 +1,8 @@
 #!/bin/bash
 # Reproduction checks for solution.md.  Prints PASS/FAIL per check; exit status 0 iff all pass.
 #
-#   scripts/quick_check.sh            quick checks only (about 1 minute)
-#   scripts/quick_check.sh --medium   also the medium checks (about 16 more minutes, up to 3 cores)
+#   scripts/quick_check.sh            quick checks only (about 40 seconds)
+#   scripts/quick_check.sh --medium   also the medium checks (about 17 minutes in total, up to 3 cores)
 #
 # Output of every check goes to out/quick/<name>.txt; the committed logs in logs/ are not touched.
 # Needs: python3 with numpy and sympy, and a C compiler (set CC to override; default clang, else cc).

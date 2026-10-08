@@ -41,7 +41,7 @@ Then $P(c)\ne0$ exactly when $f_c$ avoids the family. Two facts drive the proof:
 
 **Step 1 (Combinatorial Nullstellensatz).** Look at the monomial $c_0^{\,d}c_1^{\,p-1}\cdots c_d^{\,p-1}$. It has degree $pd$, and every exponent is $<p$. Summing $c_0^{\,p-1-d}P(c)$ over the grid $\mathbb F_p^{d+1}$ gives
 $$\sum_c c_0^{\,p-1-d}P(c)=(-1)^{d+1}C(p,d),\qquad C(p,d):=[c_0^dc_1^{p-1}\cdots c_d^{p-1}]\,H .$$
-Since $C(p,d)$ does not depend on the family, $C(p,d)\ne0$ implies that **every** family is avoided by some $f_c$. This is Alon's Combinatorial Nullstellensatz, made explicit.
+Since $C(p,d)$ does not depend on the family, $C(p,d)\ne0$ implies that **every** family is avoided by some $f_c$. This is Alon's Combinatorial Nullstellensatz, made explicit. (The poster had already suggested the Nullstellensatz, applied in the value variables $f(i)$; here it is applied in the coefficient variables.)
 
 **Step 2 (the coefficient identity).** Strip off the factor $i=0$, then apply the power-sum identity $\sum_{x\in\mathbb F_p}x^e=-[\,e\ge1,\ (p-1)\mid e\,]$ twice, together with Wilson's theorem. This turns the coefficient into a character sum over monic polynomials:
 $$C(p,d)=\sum_{F\text{ monic},\ \deg F=d}N(F)^d,\qquad N(F)=\prod_{a\in\mathbb F_p^*}F(a).$$
@@ -59,7 +59,7 @@ The full proofs are in §§1–2 of [`solution.md`](solution.md). The identity w
 
 ## Theorem 5 is computer-assisted
 
-For $d=p-3$, let $C_i=\mathbb F_p\setminus A_i$, so $|C_i|=3$. A family is blocking iff $0\notin\sum_iC_i\,(1,i,i^2)$, a sumset in $\mathbb F_p^3$ (Lemma 3.1). After normalisations that are proved in the write-up (Lemmas 3.2–3.4), this becomes a finite search. The search was carried out by three programs, written independently, using different reductions:
+For $d=p-3$, let $C_i=\mathbb F_p\setminus A_i$, so $|C_i|=3$. A family is blocking iff $0\notin\sum_iC_i\,(1,i,i^2)$, a sumset in $\mathbb F_p^3$ (Lemma 3.1, which rests on the moment characterisation of degree that the poster states). After normalisations that are proved in the write-up (Lemmas 3.2–3.4), this becomes a finite search. The search was carried out by three programs, written independently, using different reductions:
 
 | program | reduction | $p=11$ | $p=13$ |
 |---|---|---|---|

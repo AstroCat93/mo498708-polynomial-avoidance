@@ -7,6 +7,8 @@
 #         ./run_boxsearch.sh p13full -- all of (13,10): Z={2,5,11}, without scaling, 6 chunks, 3 in parallel
 #                                       (about 13 min per chunk; 80 CPU-min)
 # Logs are written to $LOGDIR (default ../../../logs/boxsearch, i.e. the committed logs are overwritten).
+# Exception: p13full writes box_p13_Z2511_noscale_s{0..5}.txt (one chunk per file); the committed
+# box_p13_Z2511_noscale_c{0,1,2}.txt are the reviewer's own run (two chunks per file) and are not overwritten.
 # Every DONE line at p=11 and p=13 must end in found=0.  Set CC to override the compiler.
 set -u
 cd "$(dirname "$0")"

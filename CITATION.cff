@@ -5,6 +5,8 @@ authors:
   - family-names: Durfee
     given-names: Nathan
 date-released: 2026-10-08
-license: MIT
+license:
+  - MIT
+  - CC-BY-4.0
 repository-code: "https://github.com/AstroCat93/mo498708-polynomial-avoidance"
 url: "https://mathoverflow.net/questions/498708"

@@ -76,7 +76,7 @@ Hence if $C(p,d)\ne0$, some $f_c$ with $\deg f_c\le d$ avoids the family.
 
 *Proof.* $Q=c_0^{p-1-d}P$ has degree $\le(p-1-d)+pd=(d+1)(p-1)$ in $d+1$ variables. By Corollary 1.2, the sum equals $(-1)^{d+1}[\prod_{j=0}^dc_j^{p-1}]Q=(-1)^{d+1}[c_0^dc_1^{p-1}\cdots c_d^{p-1}]P$. That monomial has degree $pd=\deg H$, so only $H$ contributes, and its coefficient is $C(p,d)$. $\square$
 
-(Lemma 2.1 is Alon's Combinatorial Nullstellensatz [Al], made explicit for the grid $\mathbb F_p^{d+1}$ with exponents $(d,p-1,\dots,p-1)$, all $<p$.)
+(Lemma 2.1 is Alon's Combinatorial Nullstellensatz [Al], made explicit for the grid $\mathbb F_p^{d+1}$ with exponents $(d,p-1,\dots,p-1)$, all $<p$. The poster [MO] had already proposed the Combinatorial Nullstellensatz, applied in the value variables $x_i=f(i)$ with the moment conditions of Lemma 3.1, and noted that the relevant coefficients there can vanish; the approach here applies it instead in the coefficient variables $c_j$.)
 
 ### 2.2 $C(p,d)$ as a sum over monic polynomials
 
@@ -175,6 +175,8 @@ Let $1\le d\le p-1$, $k:=p-d$, $C_i:=\mathbb F_p\setminus A_i$ (so $|C_i|=k$), a
 $$0\notin\sum_{i\in\mathbb F_p}C_i\,v_i:=\Bigl\{\sum_iy_iv_i:\ y_i\in C_i\Bigr\}.$$
 
 *Proof.* Every function $y$ is $f_y$ for a unique $f_y$ of degree $\le p-1$. By Fact 1.3, $\deg f_y\le d-1$ holds iff $[x^m]f_y=0$ for $m=d,\dots,p-1$, iff $\sum_iy_ii^{j}=0$ for $j=0,\dots,k-1$, iff $\sum_iy_iv_i=0$. A polynomial of degree $\le d-1$ avoids the family iff its value vector lies in $\prod C_i$. $\square$
+
+(The moment characterisation of $\deg f\le d-1$ used here is the one stated in the question [MO].)
 
 **Lemma 3.2 (invariances).** The property of being blocking for degree $\le d-1$ is preserved by:
 - (a) $C_i\mapsto\lambda C_i+h(i)$, where $\lambda\in\mathbb F_p^*$ and $\deg h\le d-1$;

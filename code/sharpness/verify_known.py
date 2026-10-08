@@ -9,7 +9,7 @@ def blocking_dual(p,d,A):
         reach={tuple((s[j]+c*v[j])%p for j in range(k)) for s in reach for c in C[i]}
     return tuple([0]*k) not in reach
 for p in [5,7,11,13,17,19,23]:
-    g=[pow(i,p-2,p) for i in range(p)]      # g(x)=x^{p-2}: degree p-2, so sum_i g(i) i^? ... (poster)
+    g=[pow(i,p-2,p) for i in range(p)]      # g(x)=x^{p-2} has degree p-2 (the poster's d=p-2 construction)
     Apm2=[[a for a in range(p) if a not in (g[i],(g[i]+1)%p)] for i in range(p)]
     b=[0]*p; b[0]=1
     Apm1=[[a for a in range(p) if a!=b[i]] for i in range(p)]
