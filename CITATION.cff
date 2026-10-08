@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below. The mathematics, code and text were produced by Claude (Anthropic); see README.md for the AI disclosure."
+title: "Avoiding d-sets with low-degree polynomials over F_p (MathOverflow 498708)"
+authors:
+  - family-names: Durfee
+    given-names: Nathan
+date-released: 2026-10-08
+license: MIT
+repository-code: "https://github.com/AstroCat93/mo498708-polynomial-avoidance"
+url: "https://mathoverflow.net/questions/498708"

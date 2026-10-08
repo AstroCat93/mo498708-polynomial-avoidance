@@ -1,0 +1,4 @@
+p=5 Z={2,3,4} canonical W-sets=2 u-reps=2  subsets=10 total (u,box)=1000
+BRUTE p=5 (u,box) pairs=1000 with completion=91 mismatches(dfs vs brute)=0
+p=7 Z={4,5,6} canonical W-sets=5 u-reps=2 3  subsets=35 total (u,box)=85750
+BRUTE p=7 (u,box) pairs=85750 with completion=903 mismatches(dfs vs brute)=0

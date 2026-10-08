@@ -1,0 +1,19 @@
+# compiled binaries
+code/existence/coef_direct
+code/sharpness/indep_k3
+code/sharpness/dualk3c
+code/sharpness/dualk3d
+code/sharpness/boxsearch/boxsearch
+code/sharpness/boxsearch/boxsearch_all
+code/sharpness/boxsearch/brute7
+code/sharpness/boxsearch/test_hasbox
+*.o
+*.dSYM/
+
+# generated output
+out/
+code/existence/out/
+code/sharpness/found7.txt
+__pycache__/
+*.pyc
+.DS_Store

@@ -1,0 +1,4 @@
+      786.11 real       785.19 user         0.73 sys
+DONE p=13 chunk 0/6 nodes=447055393 boxchecks=447055393 found=0
+      789.90 real       789.00 user         0.77 sys
+DONE p=13 chunk 3/6 nodes=450301449 boxchecks=450301449 found=0

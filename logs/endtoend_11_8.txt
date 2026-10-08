@@ -1,0 +1,4 @@
+families tested 4665 without solution 0 max degree of found f 7
+real 37.42
+user 37.37
+sys 0.04

@@ -1,0 +1,5 @@
+p=11 Z={8,9,10} canonical W-sets=15 u-reps=2 3  subsets=165 total (u,box)=8984250
+DONE p=11 Z={8,9,10} start=1 step=3 checked=2994750 nodes=473156623 found=0
+real 972.67
+user 971.64
+sys 0.82

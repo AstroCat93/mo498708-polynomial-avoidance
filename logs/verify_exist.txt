@@ -1,0 +1,20 @@
+exhaustive p=2 d=0 min #avoiders over all families = 2
+exhaustive p=2 d=1 min #avoiders over all families = 1
+exhaustive p=3 d=0 min #avoiders over all families = 3
+exhaustive p=3 d=1 min #avoiders over all families = 2
+exhaustive p=3 d=2 min #avoiders over all families = 1
+exhaustive p=5 d=0 min #avoiders over all families = 5
+exhaustive p=5 d=1 min #avoiders over all families = 4
+exhaustive p=5 d=2 min #avoiders over all families = 7
+exhaustive p=5 d=3 min #avoiders over all families = 2
+exhaustive p=5 d=4 min #avoiders over all families = 1
+adversarial p=7 d=2 min #avoiders found = 21
+adversarial p=7 d=3 min #avoiders found = 32
+adversarial p=7 d=4 min #avoiders found = 30
+adversarial p=7 d=5 min #avoiders found = 2
+adversarial p=11 d=2 min #avoiders found = 118
+adversarial p=11 d=3 min #avoiders found = 371
+adversarial p=11 d=4 min #avoiders found = 927
+real 693.57
+user 692.73
+sys 0.75

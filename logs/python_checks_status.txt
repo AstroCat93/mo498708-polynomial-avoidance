@@ -1,0 +1,14 @@
+verify_formula exit=0
+verify_L exit=0
+verify_sn exit=0
+verify_Sr exit=0
+verify_C_direct exit=0
+verify_coef exit=0
+verify_invariant exit=0
+closed_form exit=0
+verify_exist exit=0
+verify_poster exit=0
+verify_known exit=0
+verify_p7 exit=0
+endtoend_11_8 exit=0
+PYDONE

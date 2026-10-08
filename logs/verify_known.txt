@@ -1,0 +1,10 @@
+5 d=p-2: True  d=p-1: True
+7 d=p-2: True  d=p-1: True
+11 d=p-2: True  d=p-1: True
+13 d=p-2: True  d=p-1: True
+17 d=p-2: True  d=p-1: True
+19 d=p-2: True  d=p-1: True
+23 d=p-2: True  d=p-1: True
+real 0.02
+user 0.01
+sys 0.00

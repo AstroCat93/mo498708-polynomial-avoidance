@@ -1,0 +1,12 @@
+p=11 Z={1,2,3} W=0 4 5 6 7 8 9 10  classes=15 first-column reps=2 (noscale=0) chunk 0/1 boxdepth=0
+DONE p=11 chunk 0/1 nodes=5069550 boxchecks=5069550 found=0
+p=11 Z={8,9,10} W=0 1 2 3 4 5 6 7  classes=15 first-column reps=2 (noscale=0) chunk 0/1 boxdepth=0
+DONE p=11 chunk 0/1 nodes=5071410 boxchecks=5071410 found=0
+p=11 Z={2,5,7} W=0 1 3 4 6 8 9 10  classes=15 first-column reps=2 (noscale=0) chunk 0/1 boxdepth=0
+DONE p=11 chunk 0/1 nodes=5028390 boxchecks=5028390 found=0
+p=11 Z={3,4,9} W=0 1 2 5 6 7 8 10  classes=15 first-column reps=2 (noscale=0) chunk 0/1 boxdepth=0
+DONE p=11 chunk 0/1 nodes=5038545 boxchecks=5038545 found=0
+p=11 Z={1,5,10} W=0 2 3 4 6 7 8 9  classes=15 first-column reps=2 (noscale=0) chunk 0/1 boxdepth=0
+DONE p=11 chunk 0/1 nodes=5011095 boxchecks=5011095 found=0
+p=11 Z={1,2,3} W=0 4 5 6 7 8 9 10  classes=15 first-column reps=15 (noscale=1) chunk 0/1 boxdepth=0
+DONE p=11 chunk 0/1 nodes=36709725 boxchecks=36709725 found=0

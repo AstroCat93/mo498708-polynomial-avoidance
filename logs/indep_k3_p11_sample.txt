@@ -1,0 +1,1 @@
+DONE p=11 Z={8,9,10} start=0 step=200 checked=44922 nodes=7072971 found=0

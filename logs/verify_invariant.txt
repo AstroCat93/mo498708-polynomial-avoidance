@@ -1,0 +1,15 @@
+5 1 ok 50 trials; target 4
+5 2 ok 50 trials; target 2
+5 3 ok 50 trials; target 4
+5 4 ok 50 trials; target 4
+7 2 ok 40 trials; target 2
+7 3 ok 40 trials; target 2
+7 4 ok 30 trials; target 2
+7 5 ok 20 trials; target 6
+11 2 ok 20 trials; target 2
+11 3 ok 10 trials; target 9
+11 4 ok 5 trials; target 3
+ALL OK
+real 0.44
+user 0.40
+sys 0.01
